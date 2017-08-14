@@ -10,20 +10,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kitze/mobx-router.git"
+    "url": "git@github.com:Coding/mobx-router.git"
   },
   "keywords": [
-    "kitze",
     "mobx",
     "router",
     "react"
   ],
-  "author": "Kitze <kristijan.mkd@gmail.com> (http://kitze.rocks/)",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/kitze/mobx-router/issues"
   },
-  "homepage": "https://github.com/kitze/mobx-router#readme",
   "dependencies": {
     "babel-runtime": "^6.25.0",
     "director": "1.2.8",
