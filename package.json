@@ -1,7 +1,7 @@
 {
   "name": "mobx-router",
   "version": "0.0.7",
-  "description": "A simple router for MobX",
+  "description": "MobX router",
   "main": "dist/mobx-router.js",
   "jsnext:main":"dist/mobx-router.es2015.js",
   "scripts": {
@@ -25,7 +25,7 @@
   },
   "homepage": "https://github.com/kitze/mobx-router#readme",
   "dependencies": {
-    "babel-runtime": "^6.11.6",
+    "babel-runtime": "^6.25.0",
     "director": "1.2.8",
     "mobx": "2.5.1",
     "mobx-react": "3.5.6",
@@ -33,9 +33,9 @@
     "react": "15.3.2"
   },
   "peerDependencies": {
-    "react": "15.x",
     "mobx": "^2.5.1",
-    "mobx-react": "^3.5.6"
+    "mobx-react": "^3.5.6",
+    "react": "15.x"
   },
   "devDependencies": {
     "babel-jest": "^15.0.0",

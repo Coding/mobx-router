@@ -30,6 +30,8 @@ class Route {
     this.replaceUrlParams = this.replaceUrlParams.bind(this);
     this.getParamsObject = this.getParamsObject.bind(this);
     this.goTo = this.goTo.bind(this);
+
+    this.withoutWindow = props.withoutWindow
   }
 
   /*
@@ -81,7 +83,7 @@ class Route {
 
   goTo(store, paramsArr) {
     const paramsObject = this.getParamsObject(paramsArr);
-    const queryParamsObject = queryString.parse(window.location.search);
+    const queryParamsObject = !this.withoutWindow ? queryString.parse(window.location.search) : {};
     store.router.goTo(this, paramsObject, store, queryParamsObject);
   }
 }

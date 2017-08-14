@@ -10,10 +10,13 @@ const createDirectorRouter = (views, store) => {
   }).init();
 };
 
-const startRouter = (views, store) => {
+const startRouter = (views, store, withoutWindow) => {
   //create director configuration
   createDirectorRouter(views, store);
 
+  if (withoutWindow) {
+    return
+  }
   //autorun and watch for path changes
   autorun(() => {
     const {currentPath} = store.router;
