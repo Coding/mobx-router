@@ -1,6 +1,6 @@
 {
   "name": "mobx-router",
-  "version": "0.0.7.alpha.02",
+  "version": "0.0.8",
   "description": "MobX router",
   "main": "dist/mobx-router.js",
   "jsnext:main":"dist/mobx-router.es2015.js",
